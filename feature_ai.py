@@ -8,14 +8,14 @@ X = np.random.rand(100, 256)  # 100 images, each with 256 random pixel values
 
 # Step 2: Generate labels for the data
 # 0 = No tumor, 1 = Tumor
-y = np.random.randint(0, 2, 100)  # Randomly assign 0 or 1 to each image
+y = np.random.randint(1, 2, 100)  # Randomly assign 0 or 1 to each image
 
 # Step 3: Train the Random Forest model on the simulated data
 model = RandomForestClassifier()  # Initialize the model
 model.fit(X, y)  # Train the model with our data
 
 # Step 4: Simulate a new medical image
-new_image = np.random.rand(1, 256)  # One new image with 256 pixel values
+new_image = np.random.rand(10, 256)  # Ten new images with 256 pixel values
 
 # Step 5: Use the trained model to predict on the new image
 prediction = model.predict(new_image)
