@@ -14,7 +14,7 @@ We simulate features that mimic medical images for tumor detection. Each image h
 - **Size**
 - **Shape Complexity**
 
-We simulate 300 samples: 100 healthy and 100 with tumors.
+We simulate 300 samples: 150 healthy and 150 with tumors.
 
 ```python
 import numpy as np
